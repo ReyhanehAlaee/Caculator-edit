@@ -43,7 +43,10 @@ if op == "fac":
         r = fac(a)
 
 if op == "sqrt":
-    r = sqrt(a)
+    if a<0:
+        r = "error"
+    else: 
+        r = sqrt(a)
 
 print (r)
 
